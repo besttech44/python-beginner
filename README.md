@@ -1,10 +1,18 @@
-# python-beginner
 # My Python Journey - Started Aug 2026 from Surat
 
-Day 1: Messager search app
-- Learned: string vs int bug, loops
+Hi! I'm learning Python from my phone. No laptop yet, but still coding daily.
 
-#messager
-message=input("Search the message:")
-friend_name=input("Type the friend's name of whom you want to search messages:")
-print(friend_name+" says "+message)
+## What I built
+- Day 1: Messager search app - takes message and friend name
+- Day 2: Budget tracker - [coming]
+- Day 3: [coming]
+
+## What I learned
+- Difference between string and int
+- How input() works
+- Loops and f-strings
+
+## My Goal
+B.Tech CSE at GEC -> M.Tech IIT -> AI Engineer (35 LPA)
+
+Follow my journey: daily 1 program
