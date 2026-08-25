@@ -1,0 +1,21 @@
+#Smart home
+temperature=int(input("Enter temperature:  "))
+presence=input("Is anyone home: yes/no: ")=="yes"
+
+#Heater
+if temperature<25 and presence:
+    print("Turn Heater on ")
+else:
+        print("Turn heater off")
+       
+#AC
+if temperature>30 and presence:
+        print("Turn Ac on ")
+else:
+                print("Turn AC off")
+            
+#Fan
+if 25<temperature<30 and presence:
+    print("Turn Fan On")
+else:
+            print("Turn fan off")
