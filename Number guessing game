@@ -1,0 +1,43 @@
+import random
+secret=random.randint(1,20)
+print("Welcome to the number guessing ")
+print("game.....Guess any number(1-20) which")
+print("might be code... Try to guess in less tries")
+print("|Good luck| ^_^")
+guess=int(input("Guess a number:"))
+attempt=1
+while guess!=secret:
+    attempt=attempt+1
+    if guess<secret:
+        diff=secret-guess
+        if diff<=3:
+            print("Too close.....Within 3")
+        elif 3<diff<=10:
+            print("Not so close...Within 10")
+        elif 10<diff<20:
+            print("Too far......")
+        guess=int(input("Guess a larger number...:"))
+    elif guess>secret:
+        diff=guess-secret
+        if diff<=3:
+            print("Too close.....Within 3")
+        elif 3<diff<=10:
+            print("Not so close...Within 10")
+        elif 10<diff<=20:
+            print("Too far......")
+        guess=int(input("Guess a smaller number...:"))
+print("Attempts taken:")
+print(attempt)
+if attempt==1:
+    print("Elite guessing power...")
+    print(":/|5 STARS|\\")
+elif 1<attempt<=3:
+    print("Excellent guessing power...")
+    print(":/|4 STARS|\\")
+elif 3<attempt<=5:
+    print("Nice guessing power...")
+    print(":/|3 STARS|\\")
+else:
+    print("Needs improvement...1 star")
+
+ 
